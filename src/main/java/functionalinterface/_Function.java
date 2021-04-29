@@ -27,8 +27,10 @@ public class _Function {
         int result = incrementByOneAndMultiplyByTenFunction.apply(20);
         int result2 = incrementByOneAndMultiplyBiFunction.apply(10, 10);
 
-        System.out.println(result2);
+        System.out.println(combineWords.apply("Iluha", "Klimov"));
     }
+
+    static BiFunction<String, String, String> combineWords = (word1, word2) -> word1 + " " + word2;
 
     static Function<Integer, Integer> incrementByOneFunction = number -> number + 1;
 
